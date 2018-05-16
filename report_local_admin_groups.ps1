@@ -1,4 +1,4 @@
-$search_base = "DC=subdomain,DC=domain,DC=ORG"
+$search_base = "DC=subdomain,DC=domain,DC=com"
 $localadmin_groups = get-adgroup -ldapfilter "(&(objectCategory=group)(cn=*localadmins*)(!(cn=*computers*)))" -searchbase $search_base
 $records = @{}
 
